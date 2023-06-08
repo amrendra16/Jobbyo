@@ -1,0 +1,110 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="dash1.css">
+    <link href="registration.css" rel="stylesheet">
+    <script>
+        function f1() {
+            var b = document.getElementById("b1").innerText;
+            if (b == "Show") {
+                document.getElementById("t1").type = "text";
+                document.getElementById("b1").innerText = "Hide";
+            }
+            else {
+                document.getElementById("t1").type = "password";
+                document.getElementById("b1").innerText = "Show";
+            }
+        }
+        function f2() {
+            var b = document.getElementById("a1").innerText;
+            if (b == "Show") {
+                document.getElementById("s1").type = "text";
+                document.getElementById("a1").innerText = "Hide";
+            }
+            else {
+                document.getElementById("s1").type = "password";
+                document.getElementById("a1").innerText = "Show";
+            }
+        }
+    </script>
+</head>
+
+<body>
+  
+    <div class="container-fluid" style="background-color:#36a1a1;">
+        <div class="row" style="min-height: 486px;">
+            <div class="col-md-2" style="font: size 10px">
+                <center> <span class="fa fa-user-circle-o" style="font-size:67px;"></span><br><b>Admin</b></center>
+                <span class="fa fa-dashboard">&nbsp;<b style="font-size: 0.9rem;"><a href="/dashboard">Dashboard</a>
+                    </b></span> <br><br>
+                <span class="fa fa-question-circle">&nbsp;<b style="font-size: 0.9rem;"> <a href="/enqmng">Enquiry
+                            Management</a></b></span><br><br>
+                <span class="fa fa-user">&nbsp;<b style="font-size: 0.9rem;"><a href="/usermng">User
+                            Management</a></b></span><br><br>
+                <span class="fa fa-plus">&nbsp;<b style="font-size: 0.9rem;"><a href="/addjob">Add
+                            Job</a></b></span><br><br>
+                <span class=" fa fa-solid fa-briefcase">&nbsp;<b style="font-size: 0.9rem;"><a href="/jobmng">Job
+                            Management</a></b></span><br><br>
+                <span class="fa fa-key">&nbsp;<b style="font-size: 0.9rem;"><a href="/password">Change
+                            Password</a></b></span><br><br>
+                <span class="fa fa-sign-out">&nbsp;<b style="font-size: 0.9rem;"><a href="/logout">Logout</a></b></span>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-12" style="min-height:230px;width:100%;">
+
+                        <form action="add" method="post">
+                            <div class="row">
+                                <div class="col-md-3"></div>
+                                <div class="col-md-6"><br>
+                                    <h2>
+                                        <center> ADD JOB </center>
+                                    </h2>
+                                    Job Title:
+                                    <input type="text" name="jobtitle">
+                                    Minimum Qualification:
+                                    <select name="qualification">
+                                        <option>---Select---</option>
+                                        <option value="1">Intermediate</option>
+                                        <option value="2">Diploma</option>
+                                        <option value="3">B.tech</option>
+                                        <option value="4">BCA</option>
+                                        <option value="5">M.Tech</option>
+                                        <option value="6">MCA</option>
+                                    </select>
+                                    Salary Range(&#8377;):
+                                    <input type="number" placeholder="&#8377;" name="salary">
+                                    Job Description:
+                                    <textarea name="textarea"></textarea><br> <br>
+
+                                    <button id="login">ADD JOB</button>
+                                </div>
+                                <div class="col-md-3"></div>
+                            </div>
+
+                        </form>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12" style="min-height: 50px;color: white; background-color: black;">
+                <center>
+                    <h5 style="margin-top: 15px; font-size: 1rem;">&copy;copyrightwww.jobbiyo.com</h5>
+                </center>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
